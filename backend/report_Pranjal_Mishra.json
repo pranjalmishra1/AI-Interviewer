@@ -1,0 +1,52 @@
+{
+    "user": "Pranjal Mishra",
+    "total": 10,
+    "summary": "Interview completed. 3/10 answers submitted.",
+    "feedback": [
+        {
+            "question": "Explain the difference between Absolute and Relative cell references.",
+            "user_answer": "Relative cell references change when you copy a formula to another cell. This is the default behavior in Excel. When you move down a row, the row number in the reference changes; when you move across a column, the column letter changes. This is useful for applying the same calculation to multiple rows or columns of data. For example, if you have the formula =A1+B1 in cell C1 and you drag it down to C2, the formula will automatically update to =A2+B2.\n\n",
+            "evaluation": {
+                "correct": null,
+                "deterministic_feedback": null,
+                "llm_feedback": {
+                    "correctness": 4,
+                    "clarity": 3,
+                    "bestPractice": 1,
+                    "feedback": "The explanation of relative references is accurate and clear.  However,  the answer could be improved by also explaining absolute references and when to use each.",
+                    "needsFollowUp": true
+                }
+            }
+        },
+        {
+            "question": "What are some best practices when designing Excel dashboards?",
+            "user_answer": "Define audience and purpose\nkeep it simple",
+            "evaluation": {
+                "correct": null,
+                "deterministic_feedback": null,
+                "llm_feedback": {
+                    "correctness": 3,
+                    "clarity": 2,
+                    "bestPractice": 1,
+                    "feedback": "The answer is partially correct by mentioning audience and purpose.  However, it needs more detail and examples of best practices to be comprehensive.",
+                    "needsFollowUp": true
+                }
+            }
+        },
+        {
+            "question": "Can you explain what VLOOKUP is used for in Excel?",
+            "user_answer": "Filter Data",
+            "evaluation": {
+                "correct": null,
+                "deterministic_feedback": null,
+                "llm_feedback": {
+                    "correctness": 1,
+                    "clarity": 1,
+                    "bestPractice": 0,
+                    "feedback": "The answer is not entirely wrong, as VLOOKUP can be used in a process to filter data, but it does not accurately describe the core function of VLOOKUP.  A more complete explanation would show how VLOOKUP searches for specific data in a table and returns a corresponding value from a different column.",
+                    "needsFollowUp": true
+                }
+            }
+        }
+    ]
+}

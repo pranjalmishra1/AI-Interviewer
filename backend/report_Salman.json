@@ -1,0 +1,37 @@
+{
+    "user": "Salman",
+    "total": 10,
+    "summary": "Interview completed. 2/10 answers submitted.",
+    "feedback": [
+        {
+            "question": "What are some limitations of Excel you have faced in real projects?",
+            "user_answer": "hello",
+            "evaluation": {
+                "correct": null,
+                "deterministic_feedback": null,
+                "llm_feedback": {
+                    "correctness": 0,
+                    "clarity": 0,
+                    "bestPractice": 0,
+                    "feedback": "The response is inadequate and doesn't address the question.  Please describe specific limitations encountered while using Excel in your projects.",
+                    "needsFollowUp": true
+                }
+            }
+        },
+        {
+            "question": "Explain how you would use Excel to find duplicate records.",
+            "user_answer": "muh me lo",
+            "evaluation": {
+                "correct": null,
+                "deterministic_feedback": null,
+                "llm_feedback": {
+                    "correctness": 0,
+                    "clarity": 0,
+                    "bestPractice": 0,
+                    "feedback": "The response is unintelligible and does not address the question.  A proper answer should demonstrate knowledge of Excel functions like `COUNTIF` or Conditional Formatting for duplicate detection.",
+                    "needsFollowUp": true
+                }
+            }
+        }
+    ]
+}

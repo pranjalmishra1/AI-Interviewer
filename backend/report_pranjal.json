@@ -1,0 +1,52 @@
+{
+    "user": "pranjal",
+    "total": 10,
+    "summary": "Interview completed. 3/10 answers submitted.",
+    "feedback": [
+        {
+            "question": "Can you describe how INDEX and MATCH work together?",
+            "user_answer": "check the primary key",
+            "evaluation": {
+                "correct": null,
+                "deterministic_feedback": null,
+                "llm_feedback": {
+                    "correctness": 1,
+                    "clarity": 0,
+                    "bestPractice": 0,
+                    "feedback": "The answer is insufficient and doesn't describe how INDEX and MATCH work together.  It needs a complete explanation of how MATCH finds the row/column and INDEX retrieves the value.",
+                    "needsFollowUp": true
+                }
+            }
+        },
+        {
+            "question": "What steps would you take to clean messy data in Excel?",
+            "user_answer": "dev",
+            "evaluation": {
+                "correct": null,
+                "deterministic_feedback": null,
+                "llm_feedback": {
+                    "feedback": "\u26a0 LLM Error: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyDuOoouMpcf0duQBGMpFAi2tgXoejraI2Q",
+                    "correctness": 0,
+                    "clarity": 0,
+                    "bestPractice": 0,
+                    "needsFollowUp": false
+                }
+            }
+        },
+        {
+            "question": "Can you describe a situation where you used conditional formatting effectively?",
+            "user_answer": "I used conditional formatting in Excel to highlight employee attendance below 80% in red and performance scores above 90% in green. This made it easy for management to quickly identify areas needing attention and recognize high performers, saving review time and improving decision-making.",
+            "evaluation": {
+                "correct": null,
+                "deterministic_feedback": null,
+                "llm_feedback": {
+                    "feedback": "\u26a0 LLM Error: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyDuOoouMpcf0duQBGMpFAi2tgXoejraI2Q",
+                    "correctness": 0,
+                    "clarity": 0,
+                    "bestPractice": 0,
+                    "needsFollowUp": false
+                }
+            }
+        }
+    ]
+}

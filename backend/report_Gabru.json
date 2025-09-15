@@ -1,0 +1,22 @@
+{
+    "user": "Gabru",
+    "total": 10,
+    "summary": "Interview completed. 1/10 answers submitted.",
+    "feedback": [
+        {
+            "question": "Can you describe a situation where you used conditional formatting effectively?",
+            "user_answer": "vlookup",
+            "evaluation": {
+                "correct": null,
+                "deterministic_feedback": null,
+                "llm_feedback": {
+                    "correctness": 1,
+                    "clarity": 0,
+                    "bestPractice": 0,
+                    "feedback": "The answer is insufficient; VLOOKUP is a function, not a description of a situation using conditional formatting.  Please describe a specific scenario where you applied conditional formatting and the positive outcome.",
+                    "needsFollowUp": true
+                }
+            }
+        }
+    ]
+}

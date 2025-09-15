@@ -1,0 +1,22 @@
+{
+    "user": "Sudiksha ",
+    "total": 10,
+    "summary": "Interview completed. 1/10 answers submitted.",
+    "feedback": [
+        {
+            "question": "How would you create and use a Pivot Table to analyze data?",
+            "user_answer": "To create and use a Pivot Table, I would first select the dataset in Excel (or another tool like Google Sheets). Then, I\u2019d insert a Pivot Table and drag relevant fields into Rows, Columns, Values, and Filters. For example, if I\u2019m analyzing sales data, I\u2019d place \u201cRegion\u201d in Rows, \u201cProduct\u201d in Columns, and \u201cRevenue\u201d in Values, while adding a filter for \u201cYear.\u201d This setup would let me quickly see total revenue by region and product, and I could drill down or apply filters to uncover trends, spot outliers, or compare performance across categories.",
+            "evaluation": {
+                "correct": null,
+                "deterministic_feedback": null,
+                "llm_feedback": {
+                    "correctness": 4,
+                    "clarity": 3,
+                    "bestPractice": 1,
+                    "feedback": "The answer is accurate and clear but lacks depth in terms of specific PivotTable functionalities (e.g., calculated fields, slicers).  Mentioning data cleaning or handling potential issues before PivotTable creation would also strengthen the response.",
+                    "needsFollowUp": true
+                }
+            }
+        }
+    ]
+}

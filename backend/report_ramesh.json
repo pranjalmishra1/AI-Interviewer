@@ -1,0 +1,22 @@
+{
+    "user": "ramesh",
+    "total": 10,
+    "summary": "Interview completed. 1/10 answers submitted.",
+    "feedback": [
+        {
+            "question": "How do you handle large datasets efficiently in Excel?",
+            "user_answer": "sdgdfxh",
+            "evaluation": {
+                "correct": null,
+                "deterministic_feedback": null,
+                "llm_feedback": {
+                    "correctness": 0,
+                    "clarity": 0,
+                    "bestPractice": 0,
+                    "feedback": "The response is not understandable.  The candidate should explain techniques like Power Query, data filtering, and efficient formulas for handling large datasets.",
+                    "needsFollowUp": true
+                }
+            }
+        }
+    ]
+}
