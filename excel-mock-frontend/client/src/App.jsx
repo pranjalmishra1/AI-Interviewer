@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import WelcomeScreen from "./components/WelcomeScreen";
-import QuestionScreen from "./components/QuestionScreen";
-import ResultScreen from "./components/ResultScreen";
+import WelcomeScreen from "./Components/WelcomeScreen";
+import QuestionScreen from "./Components/QuestionScreen";
+import ResultScreen from "./Components/ResultScreen";
 
 // 🔹 Replace with your deployed backend URL from Render
 const API_BASE = "https://ai-interviewer-e2bs.onrender.com";
