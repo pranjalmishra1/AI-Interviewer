@@ -3,6 +3,9 @@ import WelcomeScreen from "./components/WelcomeScreen";
 import QuestionScreen from "./components/QuestionScreen";
 import ResultScreen from "./components/ResultScreen";
 
+// 🔹 Replace with your deployed backend URL from Render
+const API_BASE = "https://ai-interviewer-e2bs.onrender.com";
+
 function App() {
   const [step, setStep] = useState("welcome");
   const [user, setUser] = useState({});
@@ -10,27 +13,31 @@ function App() {
   const [answers, setAnswers] = useState([]);
   const [report, setReport] = useState(null);
 
+  // Fetch questions when interview starts
   useEffect(() => {
     if (step === "questions") {
-      fetch("http://127.0.0.1:8000/questions")
+      fetch(`${API_BASE}/questions`)
         .then((res) => res.json())
         .then((data) => setQuestions(data))
-        .catch((err) => console.error(err));
+        .catch((err) => console.error("❌ Error fetching questions:", err));
     }
   }, [step]);
 
+  // Handle user details submission
   const handleSubmitDetails = (details) => {
     setUser(details);
     setStep("questions");
   };
 
+  // Store each answer
   const handleAnswer = (answer) => {
     setAnswers((prev) => [...prev, answer]);
   };
 
+  // Finish interview and get report
   const finishInterview = async () => {
     try {
-      const res = await fetch("http://127.0.0.1:8000/report", {
+      const res = await fetch(`${API_BASE}/report`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -42,12 +49,18 @@ function App() {
           })),
         }),
       });
+
+      if (!res.ok) {
+        throw new Error(`Server error: ${res.status}`);
+      }
+
       const data = await res.json();
-      console.log("Report received:", data);
+      console.log("✅ Report received:", data);
       setReport(data);
       setStep("result");
     } catch (err) {
-      console.error("Error generating report:", err);
+      console.error("❌ Error generating report:", err);
+      alert("Something went wrong while generating your report. Please try again.");
     }
   };
 
