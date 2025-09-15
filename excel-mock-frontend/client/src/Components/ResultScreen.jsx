@@ -1,5 +1,3 @@
-import React from "react";
-
 function ResultScreen({ report }) {
   if (!report) return <p>Loading results...</p>;
 

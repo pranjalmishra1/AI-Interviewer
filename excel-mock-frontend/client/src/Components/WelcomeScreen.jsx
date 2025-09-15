@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 function WelcomeScreen({ onSubmit }) {
   const [details, setDetails] = useState({ name: "", age: "", course: "" });

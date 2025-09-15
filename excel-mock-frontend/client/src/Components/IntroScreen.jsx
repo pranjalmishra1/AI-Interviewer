@@ -1,4 +1,4 @@
-import { useState } from "react";
+import useState from "react";
 
 export default function IntroScreen({ onSubmit }) {
   const [form, setForm] = useState({ name: "", age: "", course: "" });
